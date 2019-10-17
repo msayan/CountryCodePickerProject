@@ -235,7 +235,7 @@ public class CCPCountry implements Comparable<CCPCountry> {
         return null;
     }
 
-    static List<CCPCountry> getCustomMasterCountryList(Context context, CountryCodePicker codePicker) {
+    public static List<CCPCountry> getCustomMasterCountryList(Context context, CountryCodePicker codePicker) {
         codePicker.refreshCustomMasterList();
         if (codePicker.customMasterCountriesList != null && codePicker.customMasterCountriesList.size() > 0) {
             return codePicker.getCustomMasterCountriesList();
